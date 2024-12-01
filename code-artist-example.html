@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js"></script> 
+    </head>
+    <nav>
+        <a class="nav-box" href="hour-of-code.html"  style="margin: 0 15px; text-decoration: none; color: #333333;">Hour of Code</a>
+        <a class="nav-box" href="index.html" style="margin: 0 15px; text-decoration: none; color: #333333;">Introduction of our team</a>
+        <a class="nav-box" href="web-project.html" style="margin: 0 15px; text-decoration: none; color: #333333;">Website project</a>
+        <a class="nav-box" href="code-artist.html" style="margin: 0 15px; text-decoration: none; color: #333333;">Introduction to code art</a>
+    </nav>
+    <body>
+        <div style="text-align:center">
+            <canvas id="art-canvas" width="1040" height="1080">
+                Sorry ... your browser doesn't support the HTML5 canvas element.
+            </canvas>        
+        </div>
+
+        <script type="text/javascript">
+            // Get reference to the 2D context of the canvas
+            let canvas = document.getElementById("art-canvas");
+            let context = canvas.getContext("2d");
+            // Set the color for drawing lines using red, green and blue components
+            // context.strokeStyle = 'rgb(255, 0, 0)';
+            context.strokeStyle = `rgb(0, 128, 0)`;
+             triangle(context);
+             laugh(context);
+             face(context);
+             points(context);
+                    </script>
+    </body>
+</html>

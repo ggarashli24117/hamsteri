@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Homework 3: Programming art</title>
+        <link rel="stylesheet" href="styles.css">  
+        <script type="text/javascript" src="scripts.js"></script>      
+    </head>
+    <nav class="navbar">
+        <a class="nav-box" href="hour-of-code.html"  style="margin: 0 15px;  color: #333333;">Hour of Code</a>
+        <a class="nav-box" href="index.html" style="margin: 0 15px;color: #333333;">Introduction of our team</a>
+        <a class="nav-box" href="web-project.html" style="margin: 0 15px; color: #333333;">Website project</a>
+        <a class="nav-box" href="code-artist-example.html" style="margin: 0 15px;  color: #333333;">Our own code-art</a>
+
+    </nav>
+    <body>
+         <h1>Introduction to code art</h1>
+        <h3>What is code art?</h3>
+        <h4>Code art is an artwork created by using code and algorithms. Instead of drawing pictures with hand, you write algorithms that create images and animations.</h4>
+        <h3>How it works?</h3>
+        <h4>We will explain this in example. </h4>
+       <h4>You see image drawed by codes and codes itself in the bottom.</h4>
+        <h4>This is all HTML code:</h4>
+        <img src="/media/Screenshot 2024-12-01 125149.png"
+        width="800" height="600" />
+        <img src="/media/truelastpart.png"
+        width="800" height="600" />
+        <h4>I want to explain canvas part of this code</h4>
+        <h4>How this code works?</h4>
+        <ol>
+            <li>The canvas element is added to the page with specific dimensions:<br></li>
+            <img src="/media/canvas_converted.jpg" 
+            width="400" height="100" />
+            <p>This creates a drawing space that is 1040 pixels wide and 1080 pixels tall.<br>If someone's browser does not support the canvas element, the fallback message ("Sorry ... your browser doesn't support the HTML5 canvas element.") will appear instead.</p>
+            <li>Accessing the canvas in JavaScript:</li>
+            <img src="/media/canvas_script_converted.jpg"
+            width="400" height="100" />
+            <p>First line connects the HTML canvas to the script.<br>Second line sets up the canvas for 2D drawing.</p>
+            <li>Setting a color:</li>
+            <img src="/media/spiral_content_converted.jpg"
+            width="400" height="100" />
+            <p>It defines color of content. rgb means red,green and blue. It this case, red=0, green=128, blue=0.<br>But you may ask, what is this "Drawspiral" thing? I will explain it now. </p>
+            <li>Drawing with JavaScript:</li>
+            <img src="/media/spiral_content_converted.jpg"
+            width="400" height="100" />
+            <p>There is a function called "DrawSpiral" in JavaScript. This code is connected with this.</p>
+        </ol>
+
+        <div style="text-align:center">
+            <canvas id="art-canvas" width="1040" height="1080">
+                Sorry ... your browser doesn't support the HTML5 canvas element.
+            </canvas>        
+        </div>          
+         <script type="text/javascript">
+            let canvas = document.getElementById("art-canvas");
+            let context = canvas.getContext("2d");
+            context.strokeStyle = `rgb(0, 128, 0)`;
+             DrawSpiral(context);
+             
+                    </script>
+   </body>
+</html>
